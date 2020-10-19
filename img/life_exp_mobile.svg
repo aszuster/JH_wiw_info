@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 98.2 287.1" style="enable-background:new 0 0 98.2 287.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#888B95;stroke-miterlimit:10;stroke-dasharray:5.88,5.88;}
+	.st1{fill:none;stroke:#888B95;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#888B95;stroke-miterlimit:10;stroke-dasharray:6.13,6.13;}
+	.st3{fill:none;stroke:#888B95;stroke-miterlimit:10;stroke-dasharray:7.17,7.17;}
+	.st4{fill:#888B95;}
+</style>
+<title>life_exp_mobile</title>
+<g>
+	<line class="st0" x1="51" y1="4.1" x2="6.9" y2="4.1"/>
+	<polyline class="st1" points="4,4.1 1,4.1 1,7.1 	"/>
+	<line class="st2" x1="1" y1="13.1" x2="1" y2="279.6"/>
+	<polyline class="st1" points="1,282.6 1,285.6 4,285.6 	"/>
+	<line class="st3" x1="11.2" y1="285.6" x2="35.8" y2="285.6"/>
+	<path class="st4" d="M62.2,0.2C64.3,0.2,66,2,66,4.1s-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S60.2,0.2,62.2,0.2L62.2,0.2z"/>
+</g>
+</svg>

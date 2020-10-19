@@ -1,0 +1,1017 @@
+@charset "UTF-8";
+/* CSS Document */
+.wiw_wrapper {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    position: relative;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wiw_body {
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#wiw-wrapper .what_is_wealth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    color: rgb(40, 43, 62);
+    width: 100%;
+    height: auto;
+    z-index: 18;
+}
+#wiw-wrapper .what_is_wealth h1 {
+    font-size: 62px;
+    font-family: "Manulife JH Serif";
+    font-style: italic;
+    font-weight: normal;
+    margin: 0px;
+    text-align: center;
+}
+#wiw-wrapper .what_is_wealth h2 {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Manulife JH Sans";
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+    z-index: 20;
+    letter-spacing: -0.1px;
+}
+#wiw-wrapper ._27_material_wiw {
+    position: relative;
+    margin-left:auto;
+    margin-right: 37px;
+    margin-top: 23px;
+    width: 287px;
+    height: 84px;
+    z-index: 17;
+}
+#wiw-wrapper ._11_life_xp_wiw {
+    position: relative;
+    margin-left: 40px;
+    margin-top: -89px;
+    width: 280px;
+    height: 63px;
+    z-index: 16;
+}
+
+#wiw-wrapper ._21_money_wiw {
+    position: relative;
+    left: 41px;
+    margin-top: 98px;
+    width: 216px;
+    height: 81px;
+    z-index: 15;
+}
+#wiw-wrapper ._3_time_wiw {
+    position: relative;
+    margin-left:auto;
+    margin-right: 37px;
+    margin-top: -106px;
+    width: 216px;
+    height: 49px;
+    z-index: 14;
+}
+#wiw-wrapper ._38_health_wiw {
+    position: relative;
+    margin-left:auto;
+    margin-right: 37px;
+    margin-top: 20px;
+    width: 244px;
+    height: 99px;
+    z-index: 13;
+}
+#wiw-wrapper .pie_chart_wiw {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: 290px;
+    height: 288px;
+    z-index: 120;
+}
+#wiw-wrapper svg{
+    height: 0px;
+    width:0px;
+}
+
+#wiw-wrapper .pie_chart_clicked{
+
+    -webkit-clip-path: url(#my-shape);
+    clip-path: url(#my-shape);
+    /*position:absolute;
+    margin-left:-310px;
+    margin-top: -30px;
+    z-index: 130;
+    width: 336px;
+    height: 346px;*/
+    z-index: 130;
+}
+/*Pie chart*/
+.clip{
+    position:absolute;
+    cursor:pointer;
+    /*opacity:0.5;*/
+    filter: opacity(50%);
+  
+  }
+  
+  .moneyPie {
+      clip-path: url(#clip);
+      left:5px;
+      top:70px;
+      z-index: 10;
+  
+    }
+    .lifeexperiencePie {
+      clip-path: url(#clip2);
+      top:45px;
+      left:67px;
+      z-index: 10;
+    }
+    .materialgoodsPie {
+      clip-path: url(#clip3);
+      top:52px;
+      left:153px;
+      z-index: 10;
+    }
+    .timePie {
+      clip-path: url(#clip4);
+      top:182px;
+      left:160px;
+      z-index: 10;
+    }
+    .healthPie {
+      clip-path: url(#clip5);
+      top:183px;
+      left:30px;
+      z-index: 10;
+    }
+    
+    /*.clip:hover {
+        filter: opacity(1);
+        /*opacity: 1;
+        transition:0.5s;
+    }*/
+    
+  
+    .clicked {
+      transform: scale(1.3);
+      transition: 0.5s;
+      filter: opacity(1);
+    }
+    
+    .shadow.clicked{
+        display:block;
+        opacity:1;
+    }
+
+    .moneyPie.clicked{
+      transform: translate(-20px, -7px) scale(1.3);
+      transition: 0.5s; 
+  
+  } 
+  
+    .moneyPie.unclicked{
+      transform: scale(1);
+      transition: 0.5s;
+    }
+  
+    .lifeexperiencePie.clicked{
+      transform: translate(-12px, -20px) scale(1.3);
+      transition: 0.5s;
+    }
+  
+    .lifeexperiencePie.unclicked{
+      transform: scale(1);
+      transition: 0.5s;
+    }
+    .materialgoodsPie.clicked{
+      transform: translate(19px, -18px) scale(1.3);
+      transition: 0.5s;
+    }
+  
+    .materialgoodsPie.unclicked{
+      transform: scale(1);
+      transition: 0.5s;
+    }
+  
+    .timePie.clicked{
+      transform: translate(19px, 7px) scale(1.3);
+      transition: 0.5s;
+    }
+  
+    .timePie.unclicked{
+      transform: scale(1);
+      transition: 0.5s;
+    }
+  
+    .healthPie.clicked{
+      transform: translate(0px, 20px) scale(1.3);
+      transition: 0.5s;
+    }
+  
+    .healthPie.unclicked{
+      transform: scale(1);
+      transition: 0.5s;
+    }
+  
+    .unclicked{
+      transform: scale(1);
+      transition: 0.5s;
+      
+    }
+
+#wiw-wrapper .number-values.active img{
+    filter: invert(10%) sepia(100%) saturate(7452%) hue-rotate(249deg) brightness(69%) contrast(131%);
+
+}
+
+#wiw-wrapper .number-values h4{  
+    font-size: 12px;
+    font-family: "Manulife JH Sans";
+    color: rgba(40, 43, 62, 0.549);
+    font-weight: bold;
+    line-height: 12px;
+    text-align: left;
+    z-index: 21;
+    position: absolute;
+    padding:0;
+    margin:0;
+    left: 0px;
+    -webkit-transition: all 0.4s; /* For Safari 3.0 to 6.0 */
+    transition: all 0.4s; /* For modern browsers */
+}
+
+#wiw-wrapper .number-values p{
+    font-family: "Manulife JH Sans";
+    color: rgba(40, 43, 62, 0.549);
+    font-weight: bold;
+    text-align: left;
+    z-index: 22;
+    position: absolute;
+    -webkit-transition: color 0.4s; /* For Safari 3.0 to 6.0 */
+    transition: color 0.4s; /* For modern browsers */
+    margin:0;
+}
+
+
+#wiw-wrapper .number-values.align-right h4,
+#wiw-wrapper .number-values.align-right p{
+    text-align: right;
+    left: auto;
+    right: 0px;
+}
+#wiw-wrapper .number-values.active {
+    display:block;
+}
+
+#wiw-wrapper .number-values.active h4, 
+#wiw-wrapper .number-values.active p{
+    color: #0000c1;
+}    
+
+#wiw-wrapper ._11_xp {
+    font-size: 43px;
+    line-height: 43px;
+    top: 27px;
+}
+#wiw-wrapper ._21_xp {
+    font-size: 66px;
+    line-height: 43px;
+    top: 20px;
+    left: -3px;
+    letter-spacing: -1px;
+}
+#wiw-wrapper ._27_xp {
+    font-size: 71px;
+    line-height: 43px;
+    top: 21px;
+    right: 8px !important;
+    letter-spacing: -5px;
+}
+#wiw-wrapper ._3_time_number {
+    font-size: 27px;
+    line-height: 43px;
+    top: 12px;
+    right: 0px;
+}
+#wiw-wrapper ._38_health {
+    font-size: 90px;
+    line-height: 43px;
+    z-index: 22;
+    top: 24px;
+    right: 4px !important;
+    letter-spacing: -5px;
+}
+
+#wiw-wrapper #numbers_graphic{
+    position: relative;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wiw-wrapper .text_cta {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    width: 771px;
+    height: fit-content;
+    z-index: 25;
+}
+#wiw-wrapper .bottom_divider {
+    height: 1px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #282B3E;
+    position: absolute;
+    top: 0px;
+}
+
+#wiw-wrapper .data_items {
+    position: absolute;
+    left: 25px;
+    top: 29px;
+    width: 423px;
+    z-index: 26;
+    /* overflow: hidden; */
+}
+
+#wiw-wrapper .data_items > div {
+    position: absolute;
+    opacity: 0;
+    transition : all 0.4s;
+}
+
+#wiw-wrapper .data_items > div.active {
+    opacity: 1;
+    z-index: 1000;
+    height: auto;
+}
+#wiw-wrapper .data_items h5 {
+    font-size: 16px;
+    font-family: "Manulife JH Sans";
+    color: rgba(40, 43, 62);
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    margin-bottom:15px;
+    
+}
+#wiw-wrapper .data_items img {
+    height: 2px;
+    width: 423px;
+    display: block;
+    margin-top: 9px;
+    margin-bottom: 16px
+}
+#wiw-wrapper .data_items p,
+#wiw-wrapper .data_items a
+{
+    font-size: 12px;
+    font-family: "Manulife JH Sans";
+    text-decoration: none;
+    color: rgb(40, 43, 62);
+    line-height: 1.765;
+    margin-top: 0;
+    
+}
+
+
+#wiw-wrapper .data_items_text a{
+    text-decoration:underline;
+}
+
+#wiw-wrapper .extra-space {
+    margin-top: 50px !important;
+}
+
+#wiw-wrapper .what_is_wealth_cta {
+    position: absolute;
+    left: 538px;
+    top: 30px;
+    width: 215px;
+    height: fit-content;
+    z-index: 27;
+    font-family: "Manulife JH Sans";
+    color: rgb(40, 43, 62);
+    text-align: left;
+}
+
+#wiw-wrapper .what_is_wealth_cta h4 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    text-align:justify;
+    margin: 0;
+}
+#wiw-wrapper .what_is_wealth_cta p {
+    font-size: 12px;
+    line-height: 14px;
+    width: 100%;
+    margin-top:10px; 
+    line-height: 1.765;
+}
+#wiw-wrapper .what_is_wealth_cta a {
+    font-size: 11px;
+    color: #FFFFFF;
+    background-color: #f3766a;
+    line-height: 39px;
+    padding-left:10px;
+    width: 120px;
+    height: 39px;
+    z-index: 31;
+    text-decoration: none;
+    display: block;
+}
+
+    img.map, map area{
+    outline: none;
+}
+    
+    #wiw-wrapper .what_is_wealth h2.subtitle_mobile {
+        display: none;
+    }
+#wiw-wrapper .hide_mobile{
+        height: auto;
+    }
+    #wiw-wrapper .show_mobile_img {
+        display: none;
+    }
+
+    .shadow{
+        position:absolute;
+        z-index:-1;
+        /*display:none;*/
+        opacity:0;
+
+    }
+    .sHealth{
+        top:172px;
+        left:16px;
+        width:267px;
+        height: 154px;
+
+    }
+
+    .sMoney{
+        top:63px;
+        left:-10px;
+        width:152px;
+        height:183px;
+    }
+
+    .sTime{
+        top:177px;
+        left:154px;
+        width:138px;
+        height: 54px;
+    }
+
+    .sMaterialGoods{
+        top:43px;
+        left:138px;
+        width:144px;
+        height: 150px;
+    }
+    .sLifeExp{
+        top:33px;
+        left:49px;
+        width:107px;
+        height:153px;
+    }
+    .showShadow{
+        display:block;
+        filter: opacity(1);
+        /*opacity:1;*/
+        transition: 0.5s;
+    }
+
+    .sMoney.clicked{
+        transform: translate(-20px, -7px) scale(1.3);
+        transition: 0.5s; 
+    
+    } 
+    
+      .sMoney.unclicked{
+        transform: scale(1);
+        transition: 0.5s;
+      }
+    
+      .sLifeExp.clicked{
+        transform: translate(-12px, -20px) scale(1.3);
+        transition: 0.5s;
+      }
+    
+      .sLifeExp.unclicked{
+        transform: scale(1);
+        transition: 0.5s;
+      }
+      .sMaterialGoods.clicked{
+        transform: translate(19px, -18px) scale(1.3);
+        transition: 0.5s;
+      }
+    
+      .sMaterialGoods.unclicked{
+        transform: scale(1);
+        transition: 0.5s;
+      }
+    
+      .sTime.clicked{
+        transform: translate(19px, 7px) scale(1.3);
+        transition: 0.5s;
+      }
+    
+      .sTime.unclicked{
+        transform: scale(1);
+        transition: 0.5s;
+      }
+    
+      .sHealth.clicked{
+        transform: translate(0px, 20px) scale(1.3);
+        transition: 0.5s;
+      }
+    
+      .sHealth.unclicked{
+        transform: scale(1);
+        transition: 0.5s;
+      }
+
+@media only screen and (max-width: 991px){
+    #wiw-wrapper .wiw_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #wiw-wrapper .what_is_wealth {
+    justify-content:start;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+    
+
+    #wiw-wrapper .what_is_wealth h1 {
+    font-size: 50px;
+    font-family: "Manulife JH Serif";
+    font-style: italic;
+    font-weight: normal;
+    margin: 0px;
+    text-align: center;
+}
+    #wiw-wrapper .what_is_wealth_cta{
+        position: relative !important;
+        left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80% !important;
+        max-width: 350px;
+    }
+
+
+
+    #wiw-wrapper .no-margin-top-cta{
+        margin-top: 0 !important;
+        top: 0px !important;
+    }
+    #wiw-wrapper .margin-top-cta{
+        margin-top: 1% !important;
+        top: 54px !important;
+        margin-bottom: 10%;
+    }
+    #wiw-wrapper .what_is_wealth h2.a_visual_breakdown {
+        display: none;
+    }
+    #wiw-wrapper .what_is_wealth h2.subtitle_mobile{
+        display: block;
+        max-width: 320px;
+        margin-bottom: 0px !important;
+        line-height: 22px !important;
+    }
+    #wiw-wrapper .what_is_wealth_cta p {
+    font-size: 12px;
+    position: relative;
+    top: 0 !important;
+    width: 100%;
+    line-height: 19px !important;
+    margin-top: 10px; 
+    text-align: center;
+}
+    #wiw-wrapper .what_is_wealth_cta a {
+    font-size: 15px;
+    color: #FFFFFF;
+    position: relative;
+    top: 0 !important;
+    background-color: #f3766a;
+    text-align: center;
+    line-height: 49px;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 200px;
+        min-width: 200px;
+    width: 50%;
+    height: 49px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#wiw-wrapper .what_is_wealth_cta h4 {
+    text-align:center;
+}
+    #wiw-wrapper #title_divider{
+        width: 330px !important;
+    }
+    #wiw-wrapper .data_items {
+        position: relative !important;
+        left: 0 !important;
+        display: flex;
+        width: 90%;
+        max-width: 423px;
+        flex-direction: column;
+    align-content: center;
+    align-items: center;
+        top: 15px;
+    /* overflow: hidden; */
+    
+}
+    #wiw-wrapper .data_items img {
+    height: 2px;
+    width: 100%;
+}
+    #wiw-wrapper .hide_mobile{
+        height: 0px !important;
+        overflow: hidden;
+    }
+    #wiw-wrapper .hide_mobile_img {
+        display: none;
+    }
+    #wiw-wrapper .show_mobile_img {
+        display: block;
+    }
+/*    #wiw-wrapper div.intro_text {
+    opacity: 1;
+    z-index: 1000;
+    height: 0px !important;
+    overflow: hidden;
+}*/
+    #wiw-wrapper .bottom_divider {
+        height: 0px !important;
+    }
+    #wiw-wrapper .text_cta {
+    position: relative;
+    left: 0;
+    margin-top:0;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: fit-content;
+    z-index: 25;
+    margin-left: auto !important;
+    margin-right: auto !important;
+        
+}
+    #wiw-wrapper .data_items h5{
+        display: none;
+
+    }
+#wiw-wrapper ._27_material_wiw,
+#wiw-wrapper ._11_life_xp_wiw,
+#wiw-wrapper ._21_money_wiw,
+#wiw-wrapper ._3_time_wiw,
+#wiw-wrapper ._38_health_wiw {
+    display: none;
+    margin:0;
+}
+    #wiw-wrapper #numbers_graphic{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        align-content: center;
+        max-width: 346px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #wiw-wrapper #data_numbers{
+        margin-top: 60px !important; 
+    }
+
+#wiw-wrapper .pie_chart_wiw {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 288px;
+    z-index: 120;
+    text-align: center;
+}
+    #wiw-wrapper .data_items > div {
+    position: relative;
+    opacity: 0;
+    transition : all 0.4s;
+    height: 0px;
+}
+
+#wiw-wrapper .number-values {  
+position: initial;
+
+    margin-top: 0px;
+    width: 100%;
+    height: 81px;
+    z-index: 15;
+}
+
+#wiw-wrapper ._27_material_wiw h4,
+#wiw-wrapper ._11_life_xp_wiw h4,
+#wiw-wrapper ._21_money_wiw h4,
+#wiw-wrapper ._3_time_wiw h4,
+#wiw-wrapper ._38_health_wiw h4 {
+    font-size: 26px;
+    line-height: 24px;
+    text-align: center;
+    position: initial;
+
+}
+#wiw-wrapper ._27_material_wiw p,
+#wiw-wrapper ._11_life_xp_wiw p,
+#wiw-wrapper ._21_money_wiw p,
+#wiw-wrapper ._3_time_wiw p,
+#wiw-wrapper ._38_health_wiw p {
+    font-size: 66px;
+    line-height: normal;
+    position: initial;
+    text-align: center;
+    letter-spacing: -2px;
+
+}
+#wiw-wrapper .number-values p sup {
+position: relative !important;
+left: 0 !important; 
+    top: 12px !important;
+    font-size: 50px !important;
+
+}
+#wiw-wrapper .number-values.align-right h4, #wiw-wrapper .number-values.align-right p {
+    text-align: center;
+}
+    #wiw-wrapper .material_mobile {
+    width: 52px;
+    position: relative;
+    right: 215px;
+    margin-top: -165px;
+    float: right;
+    margin-left: -35px;
+    }
+    #wiw-wrapper .life_mobile {
+    width: 106px;
+    position: relative;
+    left: 215px;
+    margin-top: -297px;
+    float: left;
+    margin-right: -106px;
+
+    }
+    #wiw-wrapper .money_mobile {
+    width: 100px;
+    position: relative;
+    left: 235px;
+    margin-top: -100px;
+    float: left;
+    margin-right: -89px;
+
+    }
+     #wiw-wrapper .time_mobile {
+    width: 120px;
+    position: relative;
+    right: 225px;
+    margin-top: -140px;
+    float: right;
+    margin-left: -99px;
+    }
+    #wiw-wrapper .health_mobile {
+    width: 41px;
+    position: relative;
+    right: 280px;
+    margin-top: -20px;
+    float: right;
+    margin-left: -41px;
+    }
+
+    .moneyPie {
+        clip-path: url(#clip);
+        left:35px;
+        top:70px;
+        z-index: 10;
+    
+      }
+      .lifeexperiencePie {
+        clip-path: url(#clip2);
+        top:45px;
+        left:97px;
+      }
+      .materialgoodsPie {
+        clip-path: url(#clip3);
+        top:52px;
+        left:183px;
+      }
+      .timePie {
+        clip-path: url(#clip4);
+        top:182px;
+        left:190px;
+      }
+      .healthPie {
+        clip-path: url(#clip5);
+        top:183px;
+        left:60px;
+      }
+
+    .sHealth{
+        top:172px;
+        left:46px;
+        width:267px;
+        height: 154px;
+
+    }
+
+    .sMoney{
+        top:63px;
+        left:20px;
+        width:152px;
+        height:183px;
+    }
+
+    .sTime{
+        top:177px;
+        left:184px;
+        width:138px;
+        height: 54px;
+    }
+
+    .sMaterialGoods{
+        top:43px;
+        left:168px;
+        width:144px;
+        height: 150px;
+    }
+    .sLifeExp{
+        top:33px;
+        left:78px;
+        width:108px;
+        height:153px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    #wiw-wrapper .material_mobile {
+        width: 52px;
+        position: relative;
+        right: 45px;
+        margin-top: -165px;
+        float: right;
+        margin-left: -35px;
+        }
+        #wiw-wrapper .life_mobile {
+        width: 106px;
+        position: relative;
+        left: 40px;
+        margin-top: -297px;
+        float: left;
+        margin-right: -106px;
+    
+        }
+        #wiw-wrapper .money_mobile {
+        width: 100px;
+        position: relative;
+        left: 60px;
+        margin-top: -100px;
+        float: left;
+        margin-right: -89px;
+    
+        }
+         #wiw-wrapper .time_mobile {
+        width: 120px;
+        position: relative;
+        right: 50px;
+        margin-top: -140px;
+        float: right;
+        margin-left: -99px;
+        }
+        #wiw-wrapper .health_mobile {
+        width: 41px;
+        position: relative;
+        right: 110px;
+        margin-top: -20px;
+        float: right;
+        margin-left: -41px;
+        }
+}
+
+@media only screen and (max-width: 424px){
+    #wiw-wrapper .material_mobile {
+        width: 52px;
+        position: relative;
+        right: 19px;
+        margin-top: -165px;
+        float: right;
+        margin-left: -35px;
+        }
+        #wiw-wrapper .life_mobile {
+        width: 106px;
+        position: relative;
+        left: 19px;
+        margin-top: -297px;
+        float: left;
+        margin-right: -106px;
+    
+        }
+        #wiw-wrapper .money_mobile {
+        width: 100px;
+        position: relative;
+        left: 36px;
+        margin-top: -100px;
+        float: left;
+        margin-right: -89px;
+    
+        }
+         #wiw-wrapper .time_mobile {
+        width: 120px;
+        position: relative;
+        right: 28px;
+        margin-top: -140px;
+        float: right;
+        margin-left: -99px;
+        }
+        #wiw-wrapper .health_mobile {
+        width: 41px;
+        position: relative;
+        right: 88px;
+        margin-top: -20px;
+        float: right;
+        margin-left: -41px;
+        }
+}
+
+@media only screen and (max-width: 320px){
+      #wiw-wrapper .text_cta {
+    width: 90%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    z-index: 800;
+        
+}
+    .wiw_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #wiw-wrapper .material_mobile {
+    right: 3px !important;
+    margin-left: -53px !important;    
+    }
+    #wiw-wrapper .life_mobile {
+    left: 4px;
+    }
+    #wiw-wrapper .money_mobile {
+    left: 4px;
+
+    }
+    #wiw-wrapper .time_mobile {
+    right: 8px;
+
+    }
+    #wiw-wrapper .health_mobile {
+    right: 44px;
+    }
+
+#wiw-wrapper #title_divider {
+    width: 300px !important;
+}
+    #wiw-wrapper #numbers_graphic{
+        max-width: 320px !important;
+    }
+    
+
+
+}
+
+
+@media only screen and (min-width: 991px){
+    #data_numbers{
+        margin-top:45px;
+    }
+}
